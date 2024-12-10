@@ -1,5 +1,5 @@
-import Education from "../Skills/Education";
-import Skills from "../Skills/Skills";
+import Education from "./Education";
+import Skills from "./Skills";
 
 const Portfolios = () => {
   return (
