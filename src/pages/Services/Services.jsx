@@ -3,14 +3,10 @@ import { TfiWorld } from "react-icons/tfi";
 
 const Services = () => {
   return (
-    <section
-      id="services"
-      className="py-24"
-    >
+    <section id="services" className="py-24">
       <div className="container mx-auto">
         <div className="text-center">
-          <p>Services</p>
-          <p className="text-5xl font-semibold">Specialized in</p>
+          <p className="text-3xl lg:text-5xl font-semibold">Specialized in</p>
         </div>
         {/* Card Container */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-8 lg:mt-14 gap-6 2xl:gap-8">

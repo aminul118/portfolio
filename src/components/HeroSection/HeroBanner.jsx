@@ -5,13 +5,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 const HeroBanner = () => {
   return (
-    <section id="hero" className="bg-slate-300 pt-16 text-black/60">
-      <div className="flex justify-between items-center container mx-auto ">
+    <section id="hero" className="bg-slate-300 pt-5 lg:pt-16  text-black/60">
+      <div className="flex flex-col lg:flex-row justify-between items-center container mx-auto gap-5">
         {/* Left */}
-        <div className="flex-1 space-y-4">
+        <div className="flex-1 space-y-4 px-2">
           <p className="text-xl">I'm</p>
 
-          <h1 className="text-5xl font-semibold">
+          <h1 className="text-3xl lg:text-5xl font-semibold">
             <Typewriter
               words={["Md Aminul Islam"]}
               loop
@@ -46,6 +46,7 @@ const HeroBanner = () => {
           </div>
         </div>
       </div>
+   
     </section>
   );
 };
