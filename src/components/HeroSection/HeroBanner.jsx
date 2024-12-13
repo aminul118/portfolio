@@ -28,10 +28,10 @@ const HeroBanner = () => {
             React and Next.js. Passionate about programming.
           </p>
           <div className="flex items-center gap-2 text-xl">
-            <a href="" target="_blank">
+            <a href="https://www.linkedin.com/in/aminul118/" target="_blank">
               <FaLinkedinIn />
             </a>
-            <a href="" target="_blank">
+            <a href="https://github.com/aminul118" target="_blank">
               <FaGithub />
             </a>
           </div>
@@ -46,7 +46,6 @@ const HeroBanner = () => {
           </div>
         </div>
       </div>
-   
     </section>
   );
 };

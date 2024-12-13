@@ -59,7 +59,11 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <a href="" target="_blank" className="btn">
+          <a
+            href="https://drive.google.com/file/d/1r9vn-V0T0ggA_jv7ehoUggTX8W6K2Sx1/view?usp=sharing"
+            target="_blank"
+            className="btn"
+          >
             Resume
           </a>
         </div>
