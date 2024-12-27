@@ -1,6 +1,11 @@
 import { Link } from "react-scroll";
+import { IoMdMoon } from "react-icons/io";
+import { MdLightMode } from "react-icons/md";
+import useTheme from "../../hooks/useTheme";
 
 const Navbar = () => {
+  const { handleDarkModeToggle, darkMode } = useTheme();
+  console.log(darkMode);
   const navLinks = (
     <>
       <li>
@@ -59,6 +64,11 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
+          <div className="mr-4 text-xl">
+            <button onClick={handleDarkModeToggle}>
+              {darkMode ? <IoMdMoon /> : <MdLightMode />}
+            </button>
+          </div>
           <a
             href="https://drive.google.com/file/d/1r9vn-V0T0ggA_jv7ehoUggTX8W6K2Sx1/view?usp=sharing"
             target="_blank"

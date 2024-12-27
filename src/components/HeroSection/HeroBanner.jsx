@@ -2,14 +2,21 @@ import { Typewriter } from "react-simple-typewriter";
 import banner from "../../assets/aminul.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FaGithub, FaLinkedinIn, FaArrowUp } from "react-icons/fa";
+import useTheme from "../../hooks/useTheme";
 
 const HeroBanner = () => {
+  const { darkMode } = useTheme();
   const handleTop = () => {
     scroll.scrollToTop();
   };
 
   return (
-    <section id="hero" className="bg-slate-300 pt-5 lg:pt-16 text-black/60">
+    <section
+      id="hero"
+      className={`${
+        darkMode ? "bg-slate-600 text-white/60" : "bg-slate-300 text-black/60"
+      } pt-5 lg:pt-16 `}
+    >
       <div className="flex flex-col lg:flex-row justify-between items-center container mx-auto gap-5">
         {/* Left */}
         <div className="flex-1 space-y-4 px-2">
