@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <form className="w-full max-w-md">
+    <form className="w-full max-w-md mx-auto">
       {/* Name Field */}
       <div className="mb-5">
         <label

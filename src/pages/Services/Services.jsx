@@ -1,5 +1,6 @@
 import { IoGridSharp, IoLogoFigma } from "react-icons/io5";
 import { TfiWorld } from "react-icons/tfi";
+import Projects from "../../components/Projects/Projects";
 
 const Services = () => {
   return (
@@ -48,6 +49,9 @@ const Services = () => {
           {/* Card 3 End :UI/UX Design*/}
         </div>
         {/* Card Container End*/}
+      </div>
+      <div className="py-20">
+        <Projects />
       </div>
     </section>
   );
