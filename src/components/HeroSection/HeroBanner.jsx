@@ -44,14 +44,6 @@ const HeroBanner = () => {
           </p>
           <div className="flex items-center gap-2 text-xl">
             <a
-              href="https://www.linkedin.com/in/aminul118/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="LinkedIn Profile"
-            >
-              <FaLinkedinIn />
-            </a>
-            <a
               href="https://github.com/aminul118"
               target="_blank"
               rel="noopener noreferrer"
@@ -59,10 +51,15 @@ const HeroBanner = () => {
             >
               <FaGithub />
             </a>
+            <a
+              href="https://www.linkedin.com/in/aminul118/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn Profile"
+            >
+              <FaLinkedinIn />
+            </a>
           </div>
-          <Link to="contact" className="btn btn-warning rounded-full w-32">
-            Hire me
-          </Link>
         </div>
         {/* Right */}
         <div className="flex-1">

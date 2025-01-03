@@ -1,62 +1,63 @@
+import React from "react";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import SendIcon from "@mui/icons-material/Send";
+
 const ContactForm = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    console.log(name);
+  };
   return (
-    <form className="w-full max-w-md mx-auto">
+    <Box
+      component="form"
+      onSubmit={handleSubmit}
+      className="flex flex-col gap-3"
+      noValidate
+      autoComplete="off"
+    >
+      <h1 className="text-2xl font-semibold leading-[35px] ">Contact Form</h1>
       {/* Name Field */}
-      <div className="mb-5">
-        <label
-          htmlFor="name"
-          className="block text-lg font-medium text-gray-700"
-        >
-          Name
-        </label>
-        <input
-          type="text"
-          id="name"
-          className="w-full p-4 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent  transition duration-300"
-          placeholder="Your Name"
-        />
-      </div>
+      <TextField
+        id="name"
+        label="Name"
+        variant="outlined"
+        fullWidth
+        required
+        placeholder="Your Name"
+      />
 
       {/* Email Field */}
-      <div className="mb-5">
-        <label
-          htmlFor="email"
-          className="block text-lg font-medium text-gray-700"
-        >
-          Email
-        </label>
-        <input
-          type="email"
-          id="email"
-          className="w-full p-4 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
-          placeholder="Your Email"
-        />
-      </div>
+      <TextField
+        id="email"
+        label="Email"
+        type="email"
+        variant="outlined"
+        fullWidth
+        required
+        placeholder="Your Email"
+      />
 
       {/* Message Field */}
-      <div className="mb-5">
-        <label
-          htmlFor="message"
-          className="block text-lg font-medium text-gray-700"
-        >
-          Message
-        </label>
-        <textarea
-          id="message"
-          className="w-full p-4 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 resize-none"
-          placeholder="Your Message"
-          rows="6"
-        />
-      </div>
+      <TextField
+        id="message"
+        label="Message"
+        variant="outlined"
+        fullWidth
+        required
+        placeholder="Your Message"
+        multiline
+        rows={4}
+      />
 
       {/* Submit Button */}
-      <button
-        type="submit"
-        className="w-full p-4 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
-      >
-        Send Message
-      </button>
-    </form>
+      <Button variant="contained" type="submit" endIcon={<SendIcon />}>
+        Send
+      </Button>
+    </Box>
   );
 };
 
