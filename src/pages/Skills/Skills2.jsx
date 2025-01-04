@@ -15,26 +15,28 @@ import jwt from "../../assets/skills/jwt.png";
 
 const Skills2 = () => {
   return (
-    <div className="container mx-auto flex items-center ">
-      <div className="w-36 bg-slate-500 h-36 hidden md:flex items-center justify-center">
-        <h1 className="text-3xl text-white">Skills</h1>
+    <section className="pb-8">
+      <div className="container mx-auto flex items-center ">
+        <div className="w-36 bg-slate-500 h-36 hidden md:flex items-center justify-center">
+          <h1 className="text-3xl text-white">Skills</h1>
+        </div>
+        <Marquee>
+          <img className="w-36" src={html} alt="" />
+          <img className="w-36" src={css} alt="" />
+          <img className="w-36" src={tailwind} alt="" />
+          <img className="w-36" src={daisy} alt="" />
+          <img className="w-36" src={JavaScript} alt="" />
+          <img className="w-36" src={react} alt="" />
+          <img className="w-36" src={reactRouter} alt="" />
+          <img className="w-36" src={axios} alt="" />
+          <img className="w-36" src={firebase} alt="" />
+          <img className="w-36" src={mongodb} alt="" />
+          <img className="w-36" src={nodeJs} alt="" />
+          <img className="w-36" src={expressJs} alt="" />
+          <img className="w-36" src={jwt} alt="" />
+        </Marquee>
       </div>
-      <Marquee>
-        <img className="w-36" src={html} alt="" />
-        <img className="w-36" src={css} alt="" />
-        <img className="w-36" src={tailwind} alt="" />
-        <img className="w-36" src={daisy} alt="" />
-        <img className="w-36" src={JavaScript} alt="" />
-        <img className="w-36" src={react} alt="" />
-        <img className="w-36" src={reactRouter} alt="" />
-        <img className="w-36" src={axios} alt="" />
-        <img className="w-36" src={firebase} alt="" />
-        <img className="w-36" src={mongodb} alt="" />
-        <img className="w-36" src={nodeJs} alt="" />
-        <img className="w-36" src={expressJs} alt="" />
-        <img className="w-36" src={jwt} alt="" />
-      </Marquee>
-    </div>
+    </section>
   );
 };
 

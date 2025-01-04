@@ -38,9 +38,8 @@ const HeroBanner = () => {
             />
           </h1>
           <p>
-            Creative front-end developer with more than 3 years of experience in
-            enterprise companies and startups. Proficient in JavaScript, React,
-            and Next.js. Passionate about programming.
+            Creative front-end developer with Proficient in JavaScript, React,
+            MongoDB, Node JS. Passionate about programming.
           </p>
           <div className="flex items-center gap-2 text-xl">
             <a
