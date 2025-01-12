@@ -1,14 +1,14 @@
 const Slides = ({ image, title, description, tech }) => {
   return (
-    <div className="card  ">
+    <div className="card bg-slate-200 ">
       <figure>
-        <img src={image} alt={title} />
+        <img className="h-64 object-cover" src={image} alt={title} />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <p>{description}</p>
         <div className="card-actions justify-end">
-          {tech.map((t, i) => (
+          {tech?.map((t, i) => (
             <div key={i} className="badge badge-outline">
               {t}
             </div>

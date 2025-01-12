@@ -1,84 +1,35 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Link } from "react-router";
 import Slides from "./Slides";
-import alpha from "../../assets/projects/alpha.jpg";
-import HeadTittle from "../Typing/HeadTittle";
+import foddie from "../../assets/projects/foddie.png";
+import easyDoc from "../../assets/projects/easyDoc.png";
 
 const Projects = () => {
   return (
-    <div className="container mx-auto ">
-      <div className="py-8">
-        <HeadTittle heading={`Projects`} />
+    <section className="pb-24">
+      <div className="text-center py-8">
+        <p className="text-3xl lg:text-5xl font-semibold">Projects</p>
       </div>
-      <Swiper
-        loop={true}
-        autoplay={{
-          delay: 1000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination, Autoplay]}
-        breakpoints={{
-          // When the viewport width is >= 640px
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          // When the viewport width is >= 1024px
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-        }}
-        className="mySwiper "
-      >
-        <SwiperSlide>
+      <div className="grid lg:grid-cols-3 gap-6 container mx-auto">
+        <Link to="https://foddie-resturant.netlify.app">
           <Slides
-            image={alpha}
-            title={`Alpha Store`}
-            tech={["ReactJS", "NodeJS", "ExpressJS", "Mongodb"]}
-            description={`This is the ecommerce Website`}
+            description="This Restaurant Management Website allows restaurant owners to manage their menu, streamline food ordering processes, and enhance customer satisfaction through efficient backend and interactive frontend technologies."
+            image={foddie}
           />
-        </SwiperSlide>
-        <SwiperSlide>
+        </Link>
+        <Link to="https://easy-doctor.netlify.app">
           <Slides
-            image={alpha}
-            title={`Alpha Store`}
-            tech={["ReactJS", "NodeJS", "ExpressJS", "Mongodb"]}
-            description={`This is the ecommerce Website`}
+            description="This Restaurant Management Website allows restaurant owners to manage their menu, streamline food ordering processes, and enhance customer satisfaction through efficient backend and interactive frontend technologies."
+            image={easyDoc}
           />
-        </SwiperSlide>
-        <SwiperSlide>
+        </Link>
+        <Link to="https://foddie-resturant.netlify.app/">
           <Slides
-            image={alpha}
-            title={`Alpha Store`}
-            tech={["ReactJS", "NodeJS", "ExpressJS", "Mongodb"]}
-            description={`This is the ecommerce Website`}
+            description="This Restaurant Management Website allows restaurant owners to manage their menu, streamline food ordering processes, and enhance customer satisfaction through efficient backend and interactive frontend technologies."
+            image={foddie}
           />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slides
-            image={alpha}
-            title={`Alpha Store`}
-            tech={["ReactJS", "NodeJS", "ExpressJS", "Mongodb"]}
-            description={`This is the ecommerce Website`}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slides
-            image={alpha}
-            title={`Alpha Store`}
-            tech={["ReactJS", "NodeJS", "ExpressJS", "Mongodb"]}
-            description={`This is the ecommerce Website`}
-          />
-        </SwiperSlide>
-      </Swiper>
-    </div>
+        </Link>
+      </div>
+    </section>
   );
 };
 

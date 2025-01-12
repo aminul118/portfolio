@@ -1,4 +1,5 @@
 import HeroBanner from "../components/HeroSection/HeroBanner";
+import Projects from "../components/Projects/Projects";
 import AboutMe from "../pages/AboutMe/AboutMe";
 import Contact from "../pages/Contact/Contact";
 import Portfolios from "../pages/Portfolios/Portfolios";
@@ -13,6 +14,7 @@ const HomeLayout = () => {
       <Skills2 />
       <Portfolios />
       <Services />
+      <Projects />
       <Contact />
     </div>
   );

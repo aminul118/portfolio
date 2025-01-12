@@ -13,6 +13,9 @@ const router = createBrowserRouter([
         path: "/",
         element: <HomeLayout />,
       },
+      {
+        path: 'easy-doc'
+      }
     ],
   },
 ]);

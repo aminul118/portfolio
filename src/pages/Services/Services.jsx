@@ -50,9 +50,6 @@ const Services = () => {
         </div>
         {/* Card Container End*/}
       </div>
-      <div className="py-20">
-        <Projects />
-      </div>
     </section>
   );
 };

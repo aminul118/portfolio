@@ -70,7 +70,7 @@ const Navbar = () => {
             </button>
           </div>
           <a
-            href="https://drive.google.com/file/d/1r9vn-V0T0ggA_jv7ehoUggTX8W6K2Sx1/view?usp=sharing"
+            href="https://drive.google.com/file/d/187A7iQHlo49ahrpI6M2PS3xM7IlfMY9P/view?usp=drive_link"
             target="_blank"
             className="btn"
           >
