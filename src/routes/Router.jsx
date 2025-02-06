@@ -4,6 +4,7 @@ import HomeLayout from "../layouts/HomeLayout";
 import Page404 from "../pages/ErrorPage/Page404";
 import Foddie from "../components/Projects/Foddie";
 import EasyDoc from "../components/Projects/EasyDoc";
+import PercelPoint from "../components/Projects/PercelPoint";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "easydoc",
         element: <EasyDoc />,
+      },
+      {
+        path: "percel-point",
+        element: <PercelPoint />,
       },
       {
         path: "easy-doc",

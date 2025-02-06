@@ -12,6 +12,7 @@ const Projects = () => {
       </div>
       <div className="grid lg:grid-cols-3 gap-6 container mx-auto">
         <Slides
+          detailsLinks={"/percel-point"}
           liveLink="https://percel-point.web.app"
           description="Curier Management Application"
           image={percel}
