@@ -17,6 +17,7 @@ const Projects = () => {
           image={percel}
         />
         <Slides
+          detailsLinks={"/foddie"}
           liveLink="https://foddie-resturant.netlify.app"
           description="Restaurant Management Application"
           image={foddie}
