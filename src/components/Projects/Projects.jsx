@@ -23,6 +23,7 @@ const Projects = () => {
           image={foddie}
         />
         <Slides
+          detailsLinks={"/easydoc"}
           liveLink={"https://easy-doctor.netlify.app"}
           description="Doctor Appoinment application"
           image={easyDoc}
