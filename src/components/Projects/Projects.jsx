@@ -11,19 +11,21 @@ const Projects = () => {
         <p className="text-3xl lg:text-5xl font-semibold">Projects</p>
       </div>
       <div className="grid lg:grid-cols-3 gap-6 container mx-auto">
-        <Link to="https://percel-point.web.app">
-          <Slides description="Curier Management Application" image={percel} />
-        </Link>
-
-        <Link to="https://foddie-resturant.netlify.app/">
-          <Slides
-            description="Restaurant Management Application"
-            image={foddie}
-          />
-        </Link>
-        <Link to="https://easy-doctor.netlify.app">
-          <Slides description="Doctor Appoinment application" image={easyDoc} />
-        </Link>
+        <Slides
+          liveLink="https://percel-point.web.app"
+          description="Curier Management Application"
+          image={percel}
+        />
+        <Slides
+          liveLink="https://foddie-resturant.netlify.app"
+          description="Restaurant Management Application"
+          image={foddie}
+        />
+        <Slides
+          liveLink={"https://easy-doctor.netlify.app"}
+          description="Doctor Appoinment application"
+          image={easyDoc}
+        />
       </div>
     </section>
   );

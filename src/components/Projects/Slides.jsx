@@ -1,4 +1,12 @@
-const Slides = ({ image, title, description, tech }) => {
+import { Link } from "react-router";
+const Slides = ({
+  image,
+  title,
+  description,
+  tech,
+  liveLink,
+  detailsLinks,
+}) => {
   return (
     <div className="card bg-slate-200 ">
       <figure>
@@ -13,6 +21,14 @@ const Slides = ({ image, title, description, tech }) => {
               {t}
             </div>
           ))}
+        </div>
+        <div className="space-x-4 flex justify-center">
+          <Link to={liveLink}>
+            <button className="btn btn-outline">Live Link</button>
+          </Link>
+          <Link to={detailsLinks}>
+            <button className="btn btn-warning">Details</button>
+          </Link>
         </div>
       </div>
     </div>
